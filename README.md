@@ -27,7 +27,7 @@ Let's create the build file, using wsl bash or directly in the file manager.
 touch build.sbt
 ```
 
-Then let's create the source folder for the scala codes...`src\main\scala\`.
+Then let's create the source folder for the scala codes...`src/main/scala/`.
 Inside the scala folder, let's put our sample code called `sample.scala`.
 
 ```bash
