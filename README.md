@@ -30,7 +30,7 @@ touch build.sbt
 Then let's create the source folder for the scala codes...`src\main\scala\`.
 Inside the scala folder, let's put our sample code called `sample.scala`.
 
-```
+```bash
 [23:56:48] john@DESKTOP-39NECQE:.../projects/scala/scala-practice
 $tree
 .
