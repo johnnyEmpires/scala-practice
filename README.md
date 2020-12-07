@@ -77,3 +77,50 @@ Welcome to my scala program!
 [success] Total time: 0 s, completed Dec 8, 2020, 12:15:35 AM
 sbt:scala-practice>
 ```
+## Using packages
+
+Use packages to keep your codes organized.
+
+Inside 'src/main/scala/' create another folder called `utils`.
+And within that folder create a file called `Messenger.scala` with the following
+content.
+
+```scala
+package utils
+
+object Messenger {
+
+    def Greet() : Unit = {
+        println("This is a message.")
+    }
+}
+
+```
+
+And then in the `sample.scala` file, update the code...
+
+
+```scala
+import utils.Messenger.Greet
+
+// You can name the object same as project name or app name
+object sample {
+  def main(args: Array[String]): Unit = {
+    // println("Welcome to my scala program!")
+    Greet()
+  }
+}
+
+```
+Compile again and then run...
+
+```
+sbt:scala-practice> compile
+[success] Total time: 0 s, completed Dec 8, 2020, 12:29:42 AM
+sbt:scala-practice> run
+[info] running sample
+This is a message.
+[success] Total time: 0 s, completed Dec 8, 2020, 12:29:44 AM
+sbt:scala-practice>
+
+```
