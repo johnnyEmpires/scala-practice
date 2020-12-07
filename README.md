@@ -14,8 +14,33 @@ You'll need the following...
 
 ## Project setup
 
-First clone this repository, and then `cd` into the project directory `scala-practice`.
+First create the project directory, let's call it `scala-practice`. Then `cd`
+into the project directory.
+
 ```
 cd scala-practice
 ```
 
+Let's create the build file, using wsl bash or directly in the file manager.
+
+```
+touch build.sbt
+```
+
+Then let's create the source folder for the scala codes...`src\main\scala\`.
+Inside the scala folder, let's put our sample code called `sample.scala`.
+
+```
+[23:56:48] john@DESKTOP-39NECQE:.../projects/scala/scala-practice
+$tree
+.
+├── build.sbt
+├── LICENSE
+├── README.md
+└── src
+    └── main
+        └── scala
+            └── sample.scala
+
+3 directories, 4 files
+```
