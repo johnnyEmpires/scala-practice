@@ -44,14 +44,16 @@ $tree
 
 3 directories, 4 files
 ```
+
 In the `sample.scala` file, type the following code.
 
 
-````scala
+```scala
 
 object sample {
   def main(args: Array[String]): Unit = {
     println("Welcome to my scala program!")
   }
 }
+
 ```
