@@ -57,3 +57,23 @@ object sample {
 }
 
 ```
+Now, let's compile the project using sbt. Type sbt in the terminal and wait until
+sbt interactive shell appears.
+
+Then use `compile` command to compile the project, alternatively use can use
+`~compile` to recompile on code change automatically.
+
+```bash
+sbt:scala-practice> compile
+[success] Total time: 0 s, completed Dec 8, 2020, 12:14:42 AM
+sbt:scala-practice>
+```
+
+After compilation is complete, run the project using `run` command.
+
+```bash
+[info] running FooBuild
+Welcome to my scala program!
+[success] Total time: 0 s, completed Dec 8, 2020, 12:15:35 AM
+sbt:scala-practice>
+```
