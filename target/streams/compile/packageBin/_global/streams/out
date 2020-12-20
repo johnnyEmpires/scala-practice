@@ -1,1 +1,13 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: C:\Users\John Imperial\Documents\projects\scala\scala-practice\target\scala-2.12\scala-practice_2.12-0.1.0-SNAPSHOT.jar[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/john/projects/scala/scala-practice/target/scala-2.12/scala-practice_2.12-0.1.0-SNAPSHOT.jar ...[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	sample$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/john/projects/scala/scala-practice/target/scala-2.12/classes/sample$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	utils[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/john/projects/scala/scala-practice/target/scala-2.12/classes/utils[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	utils/Messenger.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/john/projects/scala/scala-practice/target/scala-2.12/classes/utils/Messenger.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	utils/Messenger$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/john/projects/scala/scala-practice/target/scala-2.12/classes/utils/Messenger$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	sample.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/john/projects/scala/scala-practice/target/scala-2.12/classes/sample.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m[0J
