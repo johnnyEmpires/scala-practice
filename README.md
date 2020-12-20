@@ -143,3 +143,14 @@ This is a message.
 sbt:scala-practice>
 
 ```
+## Running scala jar files with java
+
+With **sbt-assembly** added in `project/plugins.sbt`. In sbt run the asembly command, then look for `target/scala/*-assembly-*SNAPSHOT.jar` and run the following command.
+
+```shell
+john@linux:~/projects/scala/scala-practice$ java -jar target/scala-2.12/scala-practice-assembly-0.1.0-SNAPSHOT.jar 
+
+this is a sample application!!!
+
+john@linux:~/projects/scala/scala-practice$ 
+```
