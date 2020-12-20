@@ -77,6 +77,25 @@ Welcome to my scala program!
 [success] Total time: 0 s, completed Dec 8, 2020, 12:15:35 AM
 sbt:scala-practice>
 ```
+
+## Converting scala files to jar
+
+Use the `package` command in `sbt` to convert the scala project to a jar file.
+You will be able to see below message after successful conversion.
+
+```shell
+sbt:scala-practice> package
+[success] Total time: 0 s, completed Dec 20, 2020, 2:18:54 PM
+```
+
+The **scala** jar file called `target/scala-X.XX/project-name_X.XX-X.X.X-SNAPSHOT.jar` is created and can be run using scala command.
+
+```shell
+john@linux:~/projects/scala/scala-practice$ scala target/scala-2.12/scala-practice_2.12-0.1.0-SNAPSHOT.jar 
+This is a message.
+another neeeeeeeeeew message!!
+```
+
 ## Using packages
 
 Use packages to keep your codes organized.
