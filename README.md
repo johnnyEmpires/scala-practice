@@ -154,3 +154,43 @@ this is a sample application!!!
 
 john@linux:~/projects/scala/scala-practice$ 
 ```
+
+## Application Packaging and Distribution
+
+This is the second way to create a jar file, however, the main
+purpose of this procedure is to build the jar file for easy sharing.
+
+Add the following line in  `project/plugins.sbt` file.
+
+```sbt
+addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.8.0")
+```
+
+Then add the following line in the `build.sbt` file
+
+```sbt
+enablePlugins(JavaAppPackaging)
+```
+
+With sbt running, use `stage` command to package the application,
+a folder `stage` inside `target/universal/` will be created. This
+folder contains to folder called `lib` and `bin`.
+
+* `lib` folder contains the dependencies and application jar file-
+* `bin` folder contains the launchers for windows (bat) and linux (bash).
+
+To run the packaged application, open the terminal within the
+`stage` folder, and run the following command.
+
+```
+bin/app-name
+```
+
+Additionally, to package the application in zip file, you can
+use `universal:packageBin` in `sbt`. This command will create a
+compressed version of the application in a zip file.
+
+More options for packaging using `sbt-native-packager` can be
+found at the project's [github page](https://github.com/sbt/sbt-native-packager#examples).
+
+
