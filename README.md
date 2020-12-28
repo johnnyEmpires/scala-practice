@@ -277,3 +277,12 @@ sbt:scala-practice>
 ```
 Use the `~test` to continously watch for any changes in and automatically
 run the test cases.
+
+Note: since `scala 3.1.0` there were deprecations on testing traits and classes.
+Most tutorials avaiable on the internet refers to these deprecated APIs and
+usually causing **errors** when running the tests.
+To use the latest APIs see `3.1.0`
+[release notes](https://www.scalatest.org/release_notes/3.1.0)
+for the deprecations.
+
+
