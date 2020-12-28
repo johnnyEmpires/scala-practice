@@ -1,7 +1,6 @@
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.funsuite.AnyFunSuite
 import utils.SampleAPI.Contact.Person
-import javax.management.PersistentMBean
 
 class SimplestPossibleSpec extends AnyFlatSpec {
     "An empty Set" should "have size 0" in {
