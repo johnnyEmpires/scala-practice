@@ -9,8 +9,8 @@ object sample {
   def main(args: Array[String]): Unit = {
     println("Welcome to my scala program!")
     // Greet()
-    call()
-    // looper()
+    // call()
+    looper()
     // openFile()
 
   }
