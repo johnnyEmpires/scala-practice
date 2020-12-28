@@ -1,7 +1,7 @@
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
 
 // class SimplestPossibleSpec extends FlatSpec {
-class SimplestPossibleSpec extends flatspec.AnyFlatSpec {
+class SimplestPossibleSpec extends AnyFlatSpec {
     // see scalatest release notes for deprecation of traits and classes
     // https://www.scalatest.org/release_notes/3.1.0
     // older tutorials still points to these old style referencing

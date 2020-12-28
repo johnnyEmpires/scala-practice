@@ -194,3 +194,86 @@ More options for packaging using `sbt-native-packager` can be
 found at the project's [github page](https://github.com/sbt/sbt-native-packager#examples).
 
 
+## Testing
+
+Here are my notes for implementing TDD using
+[scalatest](https://www.scalatest.org/).
+
+To use `scalatest`, add the dependency in the `project-root/build.sbt` file
+by adding below line.
+
+```
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.3" % "test"
+```
+
+Here is how it looks in the `build.sbt` file.
+
+```
+lazy val root = (project in file("."))
+    .settings(
+        name := "scala-practice",
+        libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.3" % "test",
+        libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.1.3",
+        libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.8.0"
+    )
+
+enablePlugins(JavaAppPackaging)
+```
+
+
+Note: `"test"` means it will not be included in the library, since user will
+not use the testing framework for basic usage.
+
+Make sure the source codes are in `main` folder and test cases are in `test`
+folder under `src` folder.
+More details [here](https://www.scala-sbt.org/1.x/docs/Directories.html).
+
+```
+john@linux:~/projects/scala/scala-practice$ tree src
+src
+├── main
+│   └── scala
+│       ├── sample.scala
+│       └── utils
+│           ├── Messenger.scala
+│           └── SampleAPI
+│               └── Caller.scala
+└── test
+    └── scala
+        └── SampleApiTest.scala
+
+6 directories, 4 files
+john@linux:~/projects/scala/scala-practice$ 
+```
+
+Here's a sample test case located in `project-root/src/test/scala/SampleApiTest.scala`.
+
+```
+import org.scalatest..flatspec.AnyFlatSpec
+
+class SimplestPossibleSpec extends AnyFlatSpec {
+
+    "An empty Set" should "have size 0" in {
+        assert(Set.empty.size == 0)
+    }
+}
+```
+
+The test can be run directly in the terminal by `sbt test`, but running it inside
+sbt server is preferrable.
+
+```
+sbt:scala-practice> test
+[info] SimplestPossibleSpec:
+[info] An empty Set
+[info] - should have size 0
+[info] Run completed in 352 milliseconds.
+[info] Total number of tests run: 1
+[info] Suites: completed 1, aborted 0
+[info] Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[success] Total time: 1 s, completed Dec 28, 2020, 10:28:44 AM
+sbt:scala-practice>
+```
+Use the `~test` to continously watch for any changes in and automatically
+run the test cases.
