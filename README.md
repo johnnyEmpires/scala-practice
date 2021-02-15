@@ -176,6 +176,12 @@ With sbt running, use `stage` command to package the application,
 a folder `stage` inside `target/universal/` will be created. This
 folder contains to folder called `lib` and `bin`.
 
+```
+\\ inside sbt
+sbt:scala-practice> stage
+```
+
+
 * `lib` folder contains the dependencies and application jar file-
 * `bin` folder contains the launchers for windows (bat) and linux (bash).
 
