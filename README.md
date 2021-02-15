@@ -177,7 +177,7 @@ a folder `stage` inside `target/universal/` will be created. This
 folder contains to folder called `lib` and `bin`.
 
 ```
-\\ inside sbt
+// inside sbt
 sbt:scala-practice> stage
 ```
 
