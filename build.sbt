@@ -30,3 +30,6 @@ enablePlugins(JavaAppPackaging)
  */
 fork in run := true
 
+// other objects have main method (such as JFXApp)
+// make sure correct main method is set
+mainClass in (Compile, run) := Some("sample.sampleApp")

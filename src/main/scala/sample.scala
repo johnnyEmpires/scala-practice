@@ -6,28 +6,29 @@ import utils.SampleAPI.Caller.looper
 import utils.SampleAPI.Caller.openFile
 import practice.getType
 import guiPractice.baseGui
+import guiPractice.ScalaFXHelloWorld
+
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
-
-
-
-object sampleApp extends JFXApp {
-	sample.subFunc()
-	stage = new PrimaryStage {
-	}
-}
-
-
+import scalafx.geometry.Insets
+import scalafx.scene.Scene
+import scalafx.scene.effect.DropShadow
+import scalafx.scene.layout.HBox
+import scalafx.scene.paint.Color._
+import scalafx.scene.paint.{Stops, LinearGradient}
+import scalafx.scene.text.Text
 
 // You can name the object same as project name or app name
-object sample {
-	// def main(args: Array[String]): Unit = {
-	// 	subFunc()
-	// }
+object sampleApp {
+	
+	def main(args: Array[String]): Unit = {
+		subFunc()
+		ScalaFXHelloWorld.main(args)
+	}
 
 	def subFunc(): Unit = {
 		// blank line separator
-		println();
+		println("\n", "-" * 60)
 
 		println("Welcome to my scala program!")
 		// Greet()
