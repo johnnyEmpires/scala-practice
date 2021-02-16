@@ -17,6 +17,8 @@ lazy val root = (project in file("."))
 		libraryDependencies ++= javafxModules.map(m => "org.openjfx" % s"javafx-$m" % "15.0.1" classifier osName)
     )
 
+
+// stage command for building the application
 enablePlugins(JavaAppPackaging)
 
 /*
