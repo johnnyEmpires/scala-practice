@@ -1,6 +1,5 @@
 package guiPractice
 
-
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.geometry.Insets

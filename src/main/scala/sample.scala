@@ -8,6 +8,7 @@ import practice.getType
 import guiPractice.baseGui
 import guiPractice.ScalaFXHelloWorld
 import guiPractice.HelloStageDemo
+import guiPractice.LineChartSample
 
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
@@ -25,7 +26,8 @@ object sampleApp {
 	def main(args: Array[String]): Unit = {
 		subFunc()
 		// ScalaFXHelloWorld.main(args)
-		HelloStageDemo.main(args)
+		// HelloStageDemo.main(args)
+		LineChartSample.main(args)
 	}
 
 	def subFunc(): Unit = {
