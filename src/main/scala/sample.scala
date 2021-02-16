@@ -7,6 +7,7 @@ import utils.SampleAPI.Caller.openFile
 import practice.getType
 import guiPractice.baseGui
 import guiPractice.ScalaFXHelloWorld
+import guiPractice.HelloStageDemo
 
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
@@ -20,10 +21,11 @@ import scalafx.scene.text.Text
 
 // You can name the object same as project name or app name
 object sampleApp {
-	
+
 	def main(args: Array[String]): Unit = {
 		subFunc()
-		ScalaFXHelloWorld.main(args)
+		// ScalaFXHelloWorld.main(args)
+		HelloStageDemo.main(args)
 	}
 
 	def subFunc(): Unit = {
