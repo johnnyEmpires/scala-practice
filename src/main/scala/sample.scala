@@ -27,7 +27,7 @@ object sampleApp {
 		subFunc()
 		// ScalaFXHelloWorld.main(args)
 		// HelloStageDemo.main(args)
-		// LineChartSample.main(args)
+		LineChartSample.main(args)
 	}
 
 	def subFunc(): Unit = {
